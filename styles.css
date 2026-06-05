@@ -46,7 +46,7 @@ main{
     justify-content: center;
     width: 100vw;
     height: 90vh;
-    /*background-color: #CF3D19;*/
+    
     
 }
 
@@ -69,27 +69,21 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-     
-    
-    /*background-color: #E9B05F;*/
-     
 }
 
 .clientes{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    /*background-color:aliceblue;*/
-        
+    height: auto;    
 }
+
 .clientes h2{
     color: var(--color-terciario);
     font-size: 4rem;
     font-family: var(--fuente-primaria);
     font-weight: 100;
 }
-
 
 .logo{
     display: flex;
@@ -99,9 +93,6 @@ footer{
     width: 100vw;
     height: 90vh;
     gap: 20px;
-    /*background-color:aqua;*/ 
-    
-    
 }
 
 .div-btn{
@@ -111,9 +102,6 @@ footer{
     width: auto;
     height: auto;
     gap:10px;
-    /*background-color: #FFFFFF; */
-          
-
 }
 
 
@@ -125,7 +113,6 @@ section{
     justify-content: space-around;
     align-items: center;
     padding: 50px 0;
-    /*background-color:#CF3D19;*/
 }
 
 .formulario-section{
@@ -136,7 +123,6 @@ section{
     justify-content: space-around;
     align-items: center;
     padding: 50px 0;
-    /* background-color:#CF3D19; */
 }
 
 .modulos{
@@ -147,7 +133,6 @@ section{
     width: 100%; 
     padding: 20px;
     height: calc(100/3); 
-    /*background-color: aqua;*/
 }
 
 .texto-modulos{
@@ -161,7 +146,6 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    
 }
 
 .bienvenida{
@@ -170,7 +154,6 @@ section{
     align-items: center;
     width: 100%;
     height: 33%;
-    /*background-color: aqua;*/
 }
 
 .bienvenida-modulos{
@@ -180,7 +163,6 @@ section{
     align-items: center;
     width: 45vw;
     height: 30vh;
-    /*background-color: aqua;*/
 }
 
 .bienvenida-modulos div{
@@ -193,8 +175,6 @@ section{
     font-family: var(--fuente-primaria);
     height: 80%;
     width: 100%;
-    /*background-color: #FF9553;*/
-    
 }
 
 .bienvenida div{
@@ -207,19 +187,14 @@ section{
     font-family: var(--fuente-primaria);
     height: 50%;
     width: 80%;
-    /*background-color: #FF9553;*/
-    
 }
-
-
 
 .bienvenida .modulos{
     
     color: var(--color-secundario);
     font-size: 2.5rem;
     font-family: var(--fuente-primaria);
-    margin-top: 20px;
-    
+    margin-top: 20px; 
 }
 
 .img{
@@ -228,75 +203,19 @@ section{
     justify-content: center;
     width: 40%;
     height: auto;
-    /*background-color: #D9D9D9;  */
-    padding: 20px;
-    
-         
+    padding: 20px;      
 }
 
 img{
-    
     width: 90%;
     height: auto;
     object-fit: contain;
-
 }
 
-
-
-.modulo-tienda {
-            display: inline-flex;
-            align-items: center;
-            gap: 15px; /* Espacio entre el círculo y el texto */
-            text-decoration: none; /* Quita el subrayado del enlace */
-            font-family: Arial, sans-serif; /* Tipografía limpia */
-            padding: 10px;
-            background-color: transparent; /* Color de fondo gris claro de la imagen */
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-            position: relative;
-        }
-
-               
-
-        /* Figura geométrica de 3/4 de círculo */
-        .grafico-tienda {
-            width: 150px;
-            height: 150px;
-            background: conic-gradient(#ff9d5c 0% 75%, transparent 75% 100%);
-            border-radius: 50%;
-            /* Rotamos 90 grados para que la porción vacía quede arriba a la derecha */
-            transform: rotate(90deg); 
-            
-        }
-
-        .grafico-tienda:hover {
-            width: 152px;
-            height: 152px;
-            background: conic-gradient(#ff9d5c 0% 75%, transparent 75% 100%);
-            border-radius: 50%;
-            /* Rotamos 180 grados para que la porción vacía quede arriba a la derecha */
-            transform: rotate(90deg); 
-            
-        }
-
-
-        /* Estilos para el texto */
-        .texto-tienda {
-            color: #701c1c; /* Color vino tinto / café oscuro de la imagen */
-            font-size: 32px;
-            font-weight: normal;
-            position: absolute;
-            left:90px;
-            top:30px;          
-        } 
-
-        
-
-        footer{
-            display: flex;
-            height: 5vh;
-        }
+footer{
+    display: flex;
+    height: 5vh;
+}
 
         .btn_vinotinto {
             background-color: var(--color-secundario);
@@ -304,12 +223,11 @@ img{
             font-size: 1.5rem;
             width: 180px;
             height: 50px;
-            /*padding: 10px 0;          👈 En lugar de height, usamos padding para dar la altura de forma segura */
-            /* SOLUCIÓN DE ALTURA ESTABLE */
+            /* DAR UNA ALTURA ESTABLE */
             display: inline-flex;    /* Usamos flex interno para centrar el texto perfectamente */
             align-items: center;     /* Centrado vertical del texto */
             justify-content: center; /* Centrado horizontal del texto */
-            flex-shrink: 0;          /* 👈 Bloquea a Flexbox para que NO encoja el botón verticalmente */
+            flex-shrink: 0;          /* Bloquea a Flexbox para que NO encoja el botón verticalmente */
             border: none;            /* Por si es una etiqueta <button> */
             cursor: pointer;
             border-radius: 10px;
@@ -330,106 +248,13 @@ img{
 
 
 
-/* 1. El contenedor que distribuye los botones en 2 columnas */
+/* El contenedor que distribuye los botones en 2 columnas */
 .contenedor-botones {
     display: grid;
     grid-template-columns: repeat(2, 200px); /* Dos columnas de 200px fijas como en la imagen */
     gap: 15px 20px; /* 15px de separación vertical, 20px horizontal */
     justify-content: center; /* Centra toda la cuadrícula en la pantalla */
     padding: 20px;
-    
-}
-
-/* Centra el botón de volver debajo de la cuadrícula */
-.contenedor-volver {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Espacio de separación con la cuadrícula de arriba */
-}
-
-/* 3. Comportamiento interactivo (UX) */
-.btn-naranja:hover {
-    background-color: var(--color-terciario);
-}
-
-.btn-naranja:active {
-    transform: scale(0.98); /* Sutil efecto de hundimiento al hacer clic */
-}
-
-.perfil{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.btn-perfil {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    
-    /* Dimensiones y Espaciado */
-    width: 200px; /* Ocupará el ancho total de su celda en la grilla */
-    padding: 9px 0; /* Controla la altura del botón de forma orgánica y segura */
-    
-    /* Diseño Visual */
-    background-color: var(--color-primario);
-    color: var(--color-secundario-fuente);
-    font-family: var(--fuente-primaria);
-    font-size: 1.75rem;
-    font-weight: normal;
-    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
-    border-radius: 6px; /* Bordes redondeados suaves tal como se ve en la captura */
-    
-    /* Transición suave para el estado Hover */
-    transition: background-color 0.2s ease, transform 0.1s ease;
-    cursor: pointer;
-}
-
-/* 3. Comportamiento interactivo (UX) */
-.btn-perfil:hover {
-    background-color: var(--color-terciario);
-}
-
-.btn-perfil:active {
-    transform: scale(0.98); /* Sutil efecto de hundimiento al hacer clic */
-}
-
-.btn-volver {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px; /* Espacio de separación entre el icono y el texto */
-    
-    /* Estilos de fuente y color (puedes adaptarlo a tus variables) */
-    color: #701c1c; /* Color vinotinto de tu paleta */
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none; /* Quita el subrayado del enlace */
-    
-    /* Opcional: un pequeño padding si quieres que se comporte como un botón suave */
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    
-}
-
-/* Controlamos el tamaño del icono de forma independiente */
-.btn-volver .icono-flecha {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.2s ease; /* Para el efecto de movimiento */
-}
-
-/* --- EFECTOS INTERACTIVOS (UX) --- */
-
-/* Al pasar el mouse, el fondo cambia suavemente y la flecha se mueve un poco a la izquierda */
-.btn-volver:hover {
-    background-color: rgba(112, 28, 28, 0.05); /* Un fondo vinotinto casi transparente */
-}
-
-.btn-volver:hover .icono-flecha {
-    transform: translateX(-4px); /* Desplaza la flecha a la izquierda dinámicamente */
 }
 
 .btn_crud {
@@ -581,34 +406,23 @@ img{
             font-weight: normal;
         }
 
-/*ESTILOS TRAIDOS*/
-
 .formulario{
-    /* background-color: aqua; */
-    /* border: 3px solid black; */
     border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 30px;
     width: 50vw;
-    height: 80vh;
-    
-    
+    height: 80vh;  
 }
 
 .formulario div{
-    /* display: flex;
-    flex-direction: column; */
     background-color:#EAEAEA;
-    /* justify-content: start;
-    align-items: start; */
     display: grid;
     grid-auto-flow:row;
     gap: 2px;
     justify-items:start;
-    align-items: start;
-            
+    align-items: start;       
 }
 
 .datos{
@@ -619,38 +433,12 @@ img{
     
 }
 
-.id{
-    /* display: grid;
-    grid-auto-flow:row;
-    gap: 2px;
-    justify-items:start;
-    align-items: start; */
-}
-
-.tipoPersona{
-    
-}
-
 .rut{
     grid-column: span 2;
 }
 
-.tipoIdentificacion{
-    
-    
-}
-
-.numeroIdentificacion{
-    
-}
-
-.fechaNacimiento{
-   
-}
-
 .nombres{
   grid-column: span 2;
-    
 }
 
 .apellidos{
