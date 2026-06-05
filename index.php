@@ -66,7 +66,7 @@ if (isset($_GET['consultar_id']) && !empty($_GET['consultar_id'])) {
     
     <div class="logo">    
             <div class="img">
-                <img src="imagenes/logo.png"  alt="imagen logo">
+                <img src="./Imagenes/logo.png"  alt="imagen logo">
             </div>
             <div class="div-btn">
                 <button type="button" id="btn-consultar" class="btn_crud">Consultar</button>
