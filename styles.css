@@ -1,0 +1,691 @@
+:root{
+    --color-primario:#FF9553;
+    --color-secundario:#811F1F;
+    --color-terciario:#E9B05F;
+    --color-fondo-oscuro: #D9D9D9;
+    --color-fondo-claro: #EAEAEA;
+    --fuente-primaria: Arial;
+    --color-primario-fuente:#CF3D19;
+    --color-secundario-fuente: #FFFFFF;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-fondo-claro);
+    
+}
+
+header{
+    background-color: #D9D9D9;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+header a{
+    color: var(--color-primario-fuente);
+    text-decoration: none;
+    font-family: var(--fuente-primaria);
+    height: 5vh;
+    
+}
+
+header a:hover{
+   font-size: 1.25rem; 
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    /*background-color: #CF3D19;*/
+    
+}
+
+footer{
+    display: flex;
+    background-color: #D9D9D9;
+    color: var(--color-primario-fuente);
+    font-family: var(--fuente-primaria);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 5vh;
+    width: 100vw;
+}
+
+.logo-section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+     
+    
+    /*background-color: #E9B05F;*/
+     
+}
+
+.clientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /*background-color:aliceblue;*/
+        
+}
+.clientes h2{
+    color: var(--color-terciario);
+    font-size: 4rem;
+    font-family: var(--fuente-primaria);
+    font-weight: 100;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 90vh;
+    gap: 20px;
+    /*background-color:aqua;*/ 
+    
+    
+}
+
+.div-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    gap:10px;
+    /*background-color: #FFFFFF; */
+          
+
+}
+
+
+section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    /*background-color:#CF3D19;*/
+}
+
+.formulario-section{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    /* background-color:#CF3D19; */
+}
+
+.modulos{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 200px;  
+    width: 100%; 
+    padding: 20px;
+    height: calc(100/3); 
+    /*background-color: aqua;*/
+}
+
+.texto-modulos{
+    color: var(--color-secundario);
+    font-size: 2rem;
+    font-family: var(--fuente-primaria);
+}
+
+.contenedor-modulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 33%;
+    /*background-color: aqua;*/
+}
+
+.bienvenida-modulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    height: 30vh;
+    /*background-color: aqua;*/
+}
+
+.bienvenida-modulos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-terciario);
+    font-size: 1.5rem;
+    font-family: var(--fuente-primaria);
+    height: 80%;
+    width: 100%;
+    /*background-color: #FF9553;*/
+    
+}
+
+.bienvenida div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: var(--color-terciario);
+    font-size: 1.5rem;
+    font-family: var(--fuente-primaria);
+    height: 50%;
+    width: 80%;
+    /*background-color: #FF9553;*/
+    
+}
+
+
+
+.bienvenida .modulos{
+    
+    color: var(--color-secundario);
+    font-size: 2.5rem;
+    font-family: var(--fuente-primaria);
+    margin-top: 20px;
+    
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    /*background-color: #D9D9D9;  */
+    padding: 20px;
+    
+         
+}
+
+img{
+    
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+
+}
+
+
+
+.modulo-tienda {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px; /* Espacio entre el círculo y el texto */
+            text-decoration: none; /* Quita el subrayado del enlace */
+            font-family: Arial, sans-serif; /* Tipografía limpia */
+            padding: 10px;
+            background-color: transparent; /* Color de fondo gris claro de la imagen */
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+               
+
+        /* Figura geométrica de 3/4 de círculo */
+        .grafico-tienda {
+            width: 150px;
+            height: 150px;
+            background: conic-gradient(#ff9d5c 0% 75%, transparent 75% 100%);
+            border-radius: 50%;
+            /* Rotamos 90 grados para que la porción vacía quede arriba a la derecha */
+            transform: rotate(90deg); 
+            
+        }
+
+        .grafico-tienda:hover {
+            width: 152px;
+            height: 152px;
+            background: conic-gradient(#ff9d5c 0% 75%, transparent 75% 100%);
+            border-radius: 50%;
+            /* Rotamos 180 grados para que la porción vacía quede arriba a la derecha */
+            transform: rotate(90deg); 
+            
+        }
+
+
+        /* Estilos para el texto */
+        .texto-tienda {
+            color: #701c1c; /* Color vino tinto / café oscuro de la imagen */
+            font-size: 32px;
+            font-weight: normal;
+            position: absolute;
+            left:90px;
+            top:30px;          
+        } 
+
+        
+
+        footer{
+            display: flex;
+            height: 5vh;
+        }
+
+        .btn_vinotinto {
+            background-color: var(--color-secundario);
+            color: var(--color-secundario-fuente);
+            font-size: 1.5rem;
+            width: 180px;
+            height: 50px;
+            /*padding: 10px 0;          👈 En lugar de height, usamos padding para dar la altura de forma segura */
+            /* SOLUCIÓN DE ALTURA ESTABLE */
+            display: inline-flex;    /* Usamos flex interno para centrar el texto perfectamente */
+            align-items: center;     /* Centrado vertical del texto */
+            justify-content: center; /* Centrado horizontal del texto */
+            flex-shrink: 0;          /* 👈 Bloquea a Flexbox para que NO encoja el botón verticalmente */
+            border: none;            /* Por si es una etiqueta <button> */
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(112, 28, 28, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s; /* Transición suave */
+        }
+
+        .btn_vinotinto:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Cuando el usuario hace clic, el botón se "aplana" (menos sombra) */
+        .btn_vinotinto:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+/* 1. El contenedor que distribuye los botones en 2 columnas */
+.contenedor-botones {
+    display: grid;
+    grid-template-columns: repeat(2, 200px); /* Dos columnas de 200px fijas como en la imagen */
+    gap: 15px 20px; /* 15px de separación vertical, 20px horizontal */
+    justify-content: center; /* Centra toda la cuadrícula en la pantalla */
+    padding: 20px;
+    
+}
+
+/* Centra el botón de volver debajo de la cuadrícula */
+.contenedor-volver {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio de separación con la cuadrícula de arriba */
+}
+
+/* 3. Comportamiento interactivo (UX) */
+.btn-naranja:hover {
+    background-color: var(--color-terciario);
+}
+
+.btn-naranja:active {
+    transform: scale(0.98); /* Sutil efecto de hundimiento al hacer clic */
+}
+
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-perfil {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Dimensiones y Espaciado */
+    width: 200px; /* Ocupará el ancho total de su celda en la grilla */
+    padding: 9px 0; /* Controla la altura del botón de forma orgánica y segura */
+    
+    /* Diseño Visual */
+    background-color: var(--color-primario);
+    color: var(--color-secundario-fuente);
+    font-family: var(--fuente-primaria);
+    font-size: 1.75rem;
+    font-weight: normal;
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    border-radius: 6px; /* Bordes redondeados suaves tal como se ve en la captura */
+    
+    /* Transición suave para el estado Hover */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    cursor: pointer;
+}
+
+/* 3. Comportamiento interactivo (UX) */
+.btn-perfil:hover {
+    background-color: var(--color-terciario);
+}
+
+.btn-perfil:active {
+    transform: scale(0.98); /* Sutil efecto de hundimiento al hacer clic */
+}
+
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espacio de separación entre el icono y el texto */
+    
+    /* Estilos de fuente y color (puedes adaptarlo a tus variables) */
+    color: #701c1c; /* Color vinotinto de tu paleta */
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    
+    /* Opcional: un pequeño padding si quieres que se comporte como un botón suave */
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    
+}
+
+/* Controlamos el tamaño del icono de forma independiente */
+.btn-volver .icono-flecha {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease; /* Para el efecto de movimiento */
+}
+
+/* --- EFECTOS INTERACTIVOS (UX) --- */
+
+/* Al pasar el mouse, el fondo cambia suavemente y la flecha se mueve un poco a la izquierda */
+.btn-volver:hover {
+    background-color: rgba(112, 28, 28, 0.05); /* Un fondo vinotinto casi transparente */
+}
+
+.btn-volver:hover .icono-flecha {
+    transform: translateX(-4px); /* Desplaza la flecha a la izquierda dinámicamente */
+}
+
+.btn_crud {
+            background-color: var(--color-primario);
+            color: var(--color-secundario-fuente);
+            font-size: 1.5rem;
+            width: 180px;
+            height: 50px;
+            /*padding: 10px 0;          👈 En lugar de height, usamos padding para dar la altura de forma segura */
+            /* SOLUCIÓN DE ALTURA ESTABLE */
+            display: inline-flex;    /* Usamos flex interno para centrar el texto perfectamente */
+            align-items: center;     /* Centrado vertical del texto */
+            justify-content: center; /* Centrado horizontal del texto */
+            flex-shrink: 0;          /* 👈 Bloquea a Flexbox para que NO encoja el botón verticalmente */
+            border: none;            
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(246, 169, 45, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s; /* Transición suave */
+        }
+
+    .btn_crud:hover {
+        background-color: var(--color-terciario);
+    }
+
+    .btn_crud:active {
+        transform: scale(0.98); /* Sutil efecto de hundimiento al hacer clic */
+    }
+
+
+
+    /*ESTILOS FORMULARIO*/
+
+        input, select{
+            background-color: var(--color-fondo-oscuro);
+            border-radius: 8px;
+            border: none;
+            height: 30px;
+            outline: none;
+            text-align:center;
+            color: #4a4a4a; /* Ajusta el color de la letra para que combine con el gris */
+    
+            /* Esta propiedad quita el diseño nativo del navegador */
+            -webkit-appearance: none; /* Para Safari y Chrome viejo */
+            -moz-appearance: none;    /* Para Firefox */
+            appearance: none;         /* Estándar moderno */
+        }
+
+        label{
+            color: var(--color-primario-fuente);
+            font-family: var(--fuente-primaria);
+            font-size: 0.80rem;
+        }
+
+        ::placeholder{
+            font-size: 0.80rem;
+            padding: 10px;
+            text-align: start;    
+        }
+
+        .input-corto{
+            width: 100px;
+        }
+
+        .input-mediano{
+            width: 180px;
+        }
+
+        select#tipoPersonas {
+            width: 180px !important;
+            height: 30px !important;
+            background-color: var(--color-fondo-oscuro) !important;
+            border-radius: 8px !important;
+            border: none !important;
+            
+            /* Quitar el estilo de fábrica del sistema operativo */
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            appearance: none !important;
+            
+            /* Centrar texto */
+            text-align: center;
+            text-align-last: center;
+            outline: none;
+
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234a4a4a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 10px center; /* Ubica la flecha a 10px del borde derecho */
+            background-size: 14px; /* Tamaño de la flecha */
+            cursor: pointer;
+        }
+
+        select#tipoId {
+            width: 180px !important;
+            height: 30px !important;
+            background-color: var(--color-fondo-oscuro) !important;
+            border-radius: 8px !important;
+            border: none !important;
+            
+            /* Quitar el estilo de fábrica del sistema operativo */
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            appearance: none !important;
+            
+            /* Centrar texto */
+            text-align: center;
+            text-align-last: center;
+            outline: none;
+
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234a4a4a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 10px center; /* Ubica la flecha a 10px del borde derecho */
+            background-size: 14px; /* Tamaño de la flecha */
+            cursor: pointer;
+        }
+
+        select#genero {
+            width: 180px !important;
+            height: 30px !important;
+            background-color: var(--color-fondo-oscuro) !important;
+            border-radius: 8px !important;
+            border: none !important;
+            
+            /* Quitar el estilo de fábrica del sistema operativo */
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
+            appearance: none !important;
+            
+            /* Centrar texto */
+            text-align: center;
+            text-align-last: center;
+            outline: none;
+
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234a4a4a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 10px center; /* Ubica la flecha a 10px del borde derecho */
+            background-size: 14px; /* Tamaño de la flecha */
+            cursor: pointer;
+        }
+
+        .input-largo{
+            width: 350px;
+        }
+
+        .encabezado-formulario{
+            color: var(--color-secundario);
+            font-family: var(--fuente-primaria);
+            font-size: 2rem;
+            font-weight: normal;
+        }
+
+/*ESTILOS TRAIDOS*/
+
+.formulario{
+    /* background-color: aqua; */
+    /* border: 3px solid black; */
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    width: 50vw;
+    height: 80vh;
+    
+    
+}
+
+.formulario div{
+    /* display: flex;
+    flex-direction: column; */
+    background-color:#EAEAEA;
+    /* justify-content: start;
+    align-items: start; */
+    display: grid;
+    grid-auto-flow:row;
+    gap: 2px;
+    justify-items:start;
+    align-items: start;
+            
+}
+
+.datos{
+    grid-column: span 4;
+    display: grid;
+    justify-items:center;
+    align-items: start;
+    
+}
+
+.id{
+    /* display: grid;
+    grid-auto-flow:row;
+    gap: 2px;
+    justify-items:start;
+    align-items: start; */
+}
+
+.tipoPersona{
+    
+}
+
+.rut{
+    grid-column: span 2;
+}
+
+.tipoIdentificacion{
+    
+    
+}
+
+.numeroIdentificacion{
+    
+}
+
+.fechaNacimiento{
+   
+}
+
+.nombres{
+  grid-column: span 2;
+    
+}
+
+.apellidos{
+    grid-column: span 2;
+}
+
+.razonSocial{
+    grid-column: span 2;
+}
+
+.direccion{
+    grid-column: span 2;
+}
+
+.correo{
+    grid-column: span 2;
+}
+
+.edad{
+    grid-column-start: 4;
+    grid-row-start: 6;
+}
+
+.telefono{
+    grid-column-start: 3;
+    grid-row-start: 6;
+}
+
+.genero{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.div-btn-form{
+    display: flex;
+    margin-top: 50px;
+    gap: 80px;
+}
