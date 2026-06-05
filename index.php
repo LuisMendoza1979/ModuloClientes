@@ -175,6 +175,33 @@ if (isset($_GET['consultar_id']) && !empty($_GET['consultar_id'])) {
     const btnEliminar = document.getElementById('btn-eliminar'); 
     const formulario = document.getElementById('formulario-cliente');
     const inputId = document.getElementById('id-cliente'); 
+    const btnNuevo = document.getElementById('btn-nuevo');
+
+    // FUNCIÓN NUEVO (LIMPIEZA INCONDICIONAL)
+    if (btnNuevo && formulario) {
+        btnNuevo.addEventListener('click', () => {
+            // 1. Limpiamos todos los inputs de texto, números, fechas, etc.
+            const inputs = formulario.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.value = "";
+            });
+
+            // 2. Restablecemos todos los select a su opción por defecto (vacía)
+            const selects = formulario.querySelectorAll('select');
+            selects.forEach(select => {
+                select.selectedIndex = 0;
+            });
+
+            // 3. Aseguramos que el action apunte a insertar
+            formulario.action = "insertarCliente.php";
+            
+            // 4. Limpiamos el ID de la URL sin recargar la página
+            if (window.location.search.includes('consultar_id')) {
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+    }
+
 
     // FUNCIÓN CONSULTAR
     btnConsultar.addEventListener('click', () => {
